@@ -4,8 +4,7 @@ import kg.geeks.game.logic.RPG_Game;
 
 import java.util.Random;
 
-public class Thor  extends Hero{
-
+public class Thor extends Hero {
 
 
     public Thor(int health, int damage, String name) {
@@ -16,7 +15,7 @@ public class Thor  extends Hero{
     public void applySuperPower(Boss boss, Hero[] heroes) {
         Random thor = new Random();
         boolean stun = thor.nextBoolean();
-        if(stun){
+        if (stun) {
             {
                 boss.setStunned(true);
                 System.out.println("Thor stunned BOSS");
